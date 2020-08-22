@@ -1,0 +1,5 @@
+<!--pages/category/category.wxml-->
+<view class="category">
+	<y-menu class="menu" bind:menuclick="menuclick" menuList="{{menuList}}" />
+	<y-content class="y-content" subcategories="{{categoryData[currentIndex].subcategories}}" categoryDetail="{{categoryData[currentIndex].categoryDetail}}" />
+</view>

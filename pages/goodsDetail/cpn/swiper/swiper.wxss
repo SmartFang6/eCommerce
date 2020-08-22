@@ -1,0 +1,7 @@
+/* pages/goodsDetail/swiper/swiper.wxss */
+.swiper{
+  height: 360px;
+}
+.swiper image{
+  height: 100%;
+}

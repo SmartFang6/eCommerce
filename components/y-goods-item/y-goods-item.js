@@ -1,0 +1,30 @@
+// components/y-goods-item/y-goods-item.js
+Component({
+  /**
+   * 组件的属性列表
+   */
+  properties: {
+    item:{
+      type:Object,
+      value:{}
+    }
+  },
+
+  /**
+   * 组件的初始数据
+   */
+  data: {
+
+  },
+
+  /**
+   * 组件的方法列表
+   */
+  methods: {
+    toGoodDetail(){
+      wx.navigateTo({
+        url: '/pages/goodsDetail/goodsDetail?iid='+this.data.item.iid,
+      })
+    }
+  }
+})

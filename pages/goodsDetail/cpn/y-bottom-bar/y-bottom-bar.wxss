@@ -1,0 +1,44 @@
+/* pages/goodsDetail/cpn/y-bottom-bar/y-bottom-bar.wxss */
+.bottom_bar{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  width: 100vw;
+  font-size: 30rpx;
+  height: 120rpx;
+  align-items: center;
+  box-shadow: 0 -1px 2px rgba(100, 100, 100, .2);
+}
+.b_left{
+  width: 58%;
+  display: flex;
+}
+.bottom_item{
+  flex: 1;
+  text-align: center;
+}
+.bottom_item image{
+  width: 44rpx;
+  height: 44rpx;
+}
+.b_right{
+  width: 42%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.b_right>view{
+  flex: 1;
+  height: 100%;
+  line-height: 120rpx;
+}
+.cart{
+  background-color: #ffe817;
+}
+.buy{
+  background-color: #ff5777;
+  color: #fff;
+}

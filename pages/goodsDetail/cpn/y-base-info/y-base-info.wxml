@@ -1,0 +1,30 @@
+<!--pages/goodsDetail/cpn/y-base-info/y-base-info.wxml-->
+<wxs module="tools">
+	var limit = function(array,length){
+		return array.slice(1,length)
+	}
+	module.exports={
+		limit:limit
+	}
+</wxs>
+<view class="base_info">
+	<view class="base_text">
+		<view class="base_title">
+      {{baseInfo.title}}
+		</view>
+		<view class="base_price">
+			<text class="new_price">{{baseInfo.newPrice}}</text>
+			<text class="old_price">{{baseInfo.oldPrice}}</text>
+			<text class="discount">{{baseInfo.discount}}</text>
+		</view>
+		<view class="base_data">
+			<text wx:for="{{baseInfo.columns}}"  wx:key="index">{{item}}</text>
+		</view>
+	</view>
+	<view class="base_serve">
+    <view class="serve_item" wx:for="{{tools.limit((baseInfo.services || ''),5)}}" wx:key="index">
+      <image class="icon" src="{{item.icon}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>

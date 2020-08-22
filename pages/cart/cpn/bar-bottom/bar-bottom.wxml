@@ -1,0 +1,11 @@
+<!--pages/cart/cpn/bottom-bar/bottom-bar.wxml-->
+<view class="bottom_bar">
+	<label>
+		<checkbox checked="{{selected}}" color="#ff5777"></checkbox>
+		全选
+	</label>
+	<view class="count">
+		总计:￥<text>{{totalPrice}}</text>
+	</view>
+	<view class="payment">去结算(<text>{{count}}</text>)</view>
+</view>

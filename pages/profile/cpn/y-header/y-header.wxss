@@ -1,0 +1,52 @@
+/* pages/profile/cpn/y-header/y-header.wxss */
+.user_header {
+  position: relative;
+  display: flex;
+  background: #ff5777;
+  height: 170rpx;
+  padding: 12rpx 30rpx;
+  color: #fff;
+  flex-direction: row;
+}
+
+.avatar {
+  width: 20%;
+}
+
+.avatar image {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 70rpx;
+  background: #f2f2f2;
+  vertical-align: middle;
+}
+
+.user_info {
+  width: 60%;
+  font-size: 36rpx;
+  vertical-align: middle;
+  margin: 0 25rpx;
+  margin-top: 20rpx;
+}
+.user_info .tel{
+  font-size: 28rpx;
+  margin-top: 16rpx;
+}
+.user_info image {
+  width: 36rpx;
+  height: 36rpx;
+  vertical-align: middle;
+  position: relative;
+  bottom: 4rpx;
+}
+
+.more {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.more image {
+  width: 60rpx;
+  height: 60rpx;
+}

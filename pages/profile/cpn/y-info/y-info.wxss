@@ -1,0 +1,15 @@
+/* pages/profile/cpn/y-info/y-info.wxss */
+.user_info{
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+.info_item{
+  flex: 1;
+  text-align: center;
+  padding: 50rpx 0;
+}
+.info_item:nth-child(2){
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}

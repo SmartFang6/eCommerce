@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "q-swiper":"./cpn/swiper/swiper",
+    "y-base-info":"./cpn/y-base-info/y-base-info",
+    "y-shop-info":"./cpn/y-shop-info/y-shop-info",
+    "y-detail-info":"./cpn/y-detail-info/y-detail-info",
+    "y-bottom-bar":"./cpn/y-bottom-bar/y-bottom-bar"
+  },
+  "navigationBarTitleText": "商品详情"
+}

@@ -1,0 +1,30 @@
+/* pages/category/cpn/y-content/y-content.wxss */
+.content {
+  height: 100%;
+}
+
+.sub_category {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx;
+  margin-top: 30rpx;
+}
+
+.sub_item {
+  width: 33%;
+  text-align: center;
+}
+
+.sub_item image {
+  width: 80%;
+  height: 55px;
+
+}
+
+.item_title {
+  font-size: 28rpx;
+  margin: 30rpx 0;
+}
+.detail {
+  width: 100%;
+}

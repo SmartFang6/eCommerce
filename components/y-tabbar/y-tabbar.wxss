@@ -1,0 +1,20 @@
+.tabbar {
+  display: flex;
+  text-align: center;
+}
+
+.tabbar_item {
+  flex: 1;
+  margin-bottom: 20rpx;
+}
+
+.active {
+  color: #ff5777;
+}
+
+.active text {
+  border-bottom: 6rpx solid #ff5777;
+  padding-bottom: 6rpx;
+  padding-left: 6rpx;
+  padding-right: 6rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "bottombar":"/pages/cart/cpn/bar-bottom/bar-bottom"
+  },
+  "navigationBarTitleText": "购物车"
+}

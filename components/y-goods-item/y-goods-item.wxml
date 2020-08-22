@@ -1,0 +1,9 @@
+<view class="goods_item" bind:tap="toGoodDetail">
+	<image class="show" src="{{item.show.img || item.img}}" mode="widthFix"></image>
+	<view class="Bt_price">
+		<view class="title">{{item.title}}</view>
+		<text class="price">￥{{item.price}}</text>
+		<image src="https://s1.ax1x.com/2020/08/10/aqVPBt.png" mode="widthFix"></image>
+		<text class="cfav">{{item.cfav}}</text>
+	</view>
+</view>

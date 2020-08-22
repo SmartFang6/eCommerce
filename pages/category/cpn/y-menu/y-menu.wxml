@@ -1,0 +1,10 @@
+<!--pages/category/cpn/y-menu/y-menu.wxml-->
+<scroll-view class="y_menus" scroll-y>
+	<view>
+		<block wx:for="{{menuList}}" wx:key="index">
+			<view bindtap="changeIndex" data-index="{{index}}" class="item {{index == currentIndex?'active':''}}">
+				{{item.title}}
+			</view>
+		</block>
+	</view>
+</scroll-view>

@@ -1,0 +1,15 @@
+<!--pages/profile/cpn/y-info/y-info.wxml-->
+<view class="user_info">
+	<view class="info_item info_money">
+		<view> <text class="count">0.00</text>元</view>
+		<view>我的余额</view>
+	</view>
+	<view class="info_item info_discount">
+		<view> <text class="count">0</text>个</view>
+		<view>我的优惠</view>
+	</view>
+	<view class="info_item info_pointer">
+		<view> <text class="count">0</text>分</view>
+		<view>我的积分</view>
+	</view>
+</view>

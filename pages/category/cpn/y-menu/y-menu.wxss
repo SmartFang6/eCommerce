@@ -1,0 +1,20 @@
+/* pages/category/cpn/y-menu/y-menu.wxss */
+.y_menus {
+  height: 100%;
+  font-size: 28rpx;
+  background: #f6f6f6;
+}
+
+.active {
+  color: #f55777;
+  font-weight: 700;
+  background: #fff;
+  border-left: 6rpx solid #f55777;
+}
+
+.item {
+  height: 100rpx;
+  line-height: 100rpx;
+  cursor: pointer;
+  text-align: center;
+}

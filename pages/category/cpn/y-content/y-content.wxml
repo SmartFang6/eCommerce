@@ -1,0 +1,15 @@
+<!--pages/category/cpn/y-content/y-content.wxml-->
+<scroll-view class="content" scroll-top="{{topNum}}" scroll-y bindscroll="handleScroll">
+	<view class="sub_category">
+		<block wx:for="{{subcategories}}" wx:key="index">
+			<view class="sub_item">
+				<image mode='widthFix' src="{{item.image}}"></image>
+				<view class="item_title">{{item.title}}</view>
+			</view>
+		</block>
+	</view>
+	<view class="detail">
+		<goods goods="{{categoryDetail}}" />
+	</view>
+	<back-top wx:if="{{showBackTop}}" bind:tap="handleBackTop" />
+</scroll-view>

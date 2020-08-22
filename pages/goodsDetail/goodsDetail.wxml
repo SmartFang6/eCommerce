@@ -1,0 +1,6 @@
+<!--pages/goodsDetail/goodsDetail.wxml-->
+<q-swiper list="{{topImages}}"/>
+<y-base-info baseInfo="{{baseInfo}}" />
+<y-shop-info shopInfo="{{shopInfo}}"/>
+<y-detail-info detailInfo="{{detailInfo}}" />
+<y-bottom-bar bind:addcart="addCart" />

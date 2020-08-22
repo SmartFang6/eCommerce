@@ -1,0 +1,19 @@
+<!-- 1. banner图 -->
+<y-swiper list="{{banner}}" />
+
+<!-- 2. 推荐数据展示 -->
+<y-recommend recommend="{{recommend}}" bind:imgLoading="imgLoading" />
+
+<!-- 3. 本周流行 -->
+<view class="popular">
+	<image src="/assets/img/recommend_bg.jpg" mode="widthFix"> </image>
+</view>
+
+<!-- 4. tabbar工具栏 -->
+<y-tabbar id="tabbar" tabbar="{{tabbar}}" bindtabclick="tabclick"/>
+<y-tabbar class="tab-control" tabbar="{{tabbar}}" bindtabclick="tabclick" wx:if="{{showTabbar}}"/>
+<!-- 商品数据展示 -->
+<y-goods goods="{{goods[currentType].list}}"/>
+
+<!-- 返回顶部 -->
+<y-back-top wx:if="{{showBackTop}}" bind:tap="handleBackTop"/>

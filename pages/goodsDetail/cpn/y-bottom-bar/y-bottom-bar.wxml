@@ -1,0 +1,25 @@
+<!--pages/goodsDetail/cpn/y-bottom-bar/y-bottom-bar.wxml-->
+<view class="bottom_bar">
+	<view class="b_left">
+		<view class="bottom_item">
+			<image src="/assets/detail/service.png"></image>
+			<view>客服</view>
+		</view>
+		<view class="bottom_item">
+			<image src="/assets/detail/shop.png"></image>
+			<view>店铺</view>
+		</view>
+		<view class="bottom_item">
+			<image src="/assets/detail/collect.png"></image>
+			<view>收藏</view>
+		</view>
+	</view>
+	<view class="b_right">
+		<view class="cart" bind:tap="onAddCart">
+			加入购物车
+		</view>
+		<view class="buy">
+			购买
+		</view>
+	</view>
+</view>

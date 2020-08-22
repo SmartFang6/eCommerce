@@ -1,0 +1,9 @@
+<!--pages/profile/cpn/y-view-list/y-view-list.wxml-->
+<view class="view_list">
+	<block wx:for="{{list}}" wx:key="index">
+    <view data-msg="{{item.msg}}" bindtap="toCart" class="list_item">
+      <image src="{{item.img}}"></image>
+      <text>{{item.msg}}</text>
+    </view>
+  </block>
+</view>

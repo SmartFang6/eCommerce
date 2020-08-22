@@ -1,0 +1,7 @@
+<!--pages/profile/profile.wxml-->
+<view class="profile">
+  <y-header />
+  <y-info />
+  <y-view-list list="{{list1}}"/>
+  <y-view-list list="{{list2}}"/>
+</view>

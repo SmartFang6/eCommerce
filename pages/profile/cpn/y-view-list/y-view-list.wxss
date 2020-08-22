@@ -1,0 +1,23 @@
+/* pages/profile/cpn/y-view-list/y-view-list.wxss */
+.view_list {
+  border-top: 36rpx solid #f8f8f8;
+}
+
+.list_item {
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #fff;
+  font-size: 32rpx;
+  margin-left: 30rpx;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.view_list image {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.view_list text{
+  vertical-align: middle;
+  margin-left: 20rpx;
+}

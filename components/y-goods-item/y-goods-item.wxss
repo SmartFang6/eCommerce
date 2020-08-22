@@ -1,0 +1,41 @@
+.goods_item {
+  text-align: center;
+  color: #333;
+  padding-bottom: 85rpx;
+}
+
+.show {
+  border-radius: 10rpx;
+  width: 100%;
+}
+
+.goods_item .show {
+  height: 462rpx;
+}
+
+.title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10rpx 0;
+  font-size: 28rpx;
+}
+
+.Bt_price {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5rpx;
+  font-size: 26rpx;
+}
+
+.Bt_price image {
+  width: 30rpx;
+  height: 30rpx;
+  padding: 0 6rpx;
+}
+
+.price {
+  color: #ff5777;
+  margin: 0 6rpx;
+}

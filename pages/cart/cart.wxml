@@ -1,0 +1,26 @@
+<!--pages/cart/cart.wxml-->
+<wxs module="tofixed">
+	function tofixed(num){
+		return num.toFixed(2)
+	} 
+	module.exports.tofixed = tofixed;
+</wxs>
+<view class="cart">
+	<block wx:for="{{cartList}}" wx:key="index">
+		<view class="cart_item">
+			<view class="checkbox">
+				<checkbox bindtap="onCheckClick" data-index="{{index}}" color="#ff5777" checked="{{item.checked}}"></checkbox>
+			</view>
+			<image src="{{item.imageURL}}"></image>
+			<view class="cart_info">
+				<view class="item_title">{{item.title}}</view>
+				<view class="item_desc">{{item.desc}}</view>
+				<view class="item_price">
+					<text class="price">￥{{item.price}}</text>
+					<text class="number">x{{item.count}}</text>
+				</view>
+			</view>
+		</view>
+	</block>
+	<bottombar count="{{count}}" totalPrice="{{tofixed.tofixed(totalPrice)}}" selected="{{isSelectAll}}" bind:tap="onSelectAll"/>
+</view>
