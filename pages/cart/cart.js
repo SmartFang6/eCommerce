@@ -25,6 +25,7 @@ Page({
     this.setData({
       cartList
     })
+    this.changeData()
   },
   changeData() {
     // 1.获取所有选中数据

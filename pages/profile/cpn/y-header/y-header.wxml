@@ -1,16 +1,23 @@
 <!--pages/profile/cpn/y-header/y-header.wxml-->
 <view class="user_header">
 	<view class="avatar">
-		<image src="/assets/profile/avatar.png"></image>
+		<image src="{{avatarUrl}}"></image>
 	</view>
 	<view class="user_info">
-		<view class="login_reg">
-      <text class="login">登录</text>/<text class="reg">注册</text>
-    </view>
-		<view class="tel">
-			<image class="icon" src="/assets/profile/phone.png"></image>
-			<text>暂无绑定手机号</text>
-		</view>
+		<block wx:if="{{!nickName}}">
+			<view class="login_reg">
+				<button open-type="getUserInfo" class="login" bindtap="loginWx">登录</button>/<text class="reg">注册</text>
+			</view>
+			<view class="tel">
+				<image class="icon" src="/assets/profile/phone.png"></image>
+				<text>暂无绑定手机号</text>
+			</view>
+		</block>
+		<block wx:else>
+			<view class="nick_name">
+				{{nickName}}
+			</view>
+		</block>
 	</view>
 	<view class="more">
 		<image src="/assets/profile/arrow-right.png"></image>

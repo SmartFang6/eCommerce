@@ -3,6 +3,9 @@
   display: flex;
   flex-direction: column;
 }
+.cart_list{
+  margin-bottom: 90rpx;
+}
 
 .cart_item {
   display: flex;

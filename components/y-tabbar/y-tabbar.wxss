@@ -6,6 +6,7 @@
 .tabbar_item {
   flex: 1;
   margin-bottom: 20rpx;
+  padding: 10rpx 0;
 }
 
 .active {
